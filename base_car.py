@@ -39,8 +39,8 @@ class Car(ABC):
             str: A string containing the car type, license plate, and rental cost.
         """
         return (
-            f"{self.car_type} Plate: {self.license_plate} "
-            f"Rental: {self.price_per_day} HUF"
+            f"{self.license_plate} | {self.car_type} | "
+            f"{self.price_per_day} HUF per day."
         )
 
     @property
